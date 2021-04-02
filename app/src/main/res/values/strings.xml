@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GrakoviiRedactor</string>
+    <string name="entity">Entities</string>
+    <string name="individuals">Individuals</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="loading">Loading…</string>
+    <string name="classes">Classes</string>
+    <string name="data">Data Properties</string>
+    <string name="object">Object Properties</string>
+    <string name="annotation">Annotation Properties</string>
+    <string name="datatypes">DataTypes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

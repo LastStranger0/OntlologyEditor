@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/entities"
+        android:icon="@drawable/ic_entity"
+        android:orderInCategory="1"
+        android:title="@string/entity"/>
+
+    <item android:id="@+id/individuals"
+        android:icon="@drawable/ic_individuals"
+        android:orderInCategory="2"
+        android:title="@string/individuals"/>
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="3"
+        android:title="@string/search"/>
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="4"
+        android:title="@string/settings"/>
+</menu>

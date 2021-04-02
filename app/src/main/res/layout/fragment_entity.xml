@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntityFragment">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C82196F3"
+        android:id="@+id/entityClasses"
+        android:src="@drawable/ic_classes"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/classes"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/entityClasses"
+        app:layout_constraintStart_toStartOf="@id/entityClasses"
+        app:layout_constraintTop_toBottomOf="@id/entityClasses" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/entityObjectProperties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#C82196F3"
+        android:src="@drawable/ic_object_properties"
+        app:layout_constraintEnd_toStartOf="@+id/entityDataProperties"
+        app:layout_constraintStart_toEndOf="@id/entityClasses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/object"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/entityObjectProperties"
+        app:layout_constraintStart_toStartOf="@id/entityObjectProperties"
+        app:layout_constraintTop_toBottomOf="@id/entityObjectProperties" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C82196F3"
+        android:id="@+id/entityDataProperties"
+        android:src="@drawable/ic_data_properties"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/data"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/entityDataProperties"
+        app:layout_constraintStart_toStartOf="@id/entityDataProperties"
+        app:layout_constraintTop_toBottomOf="@id/entityDataProperties" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/entityAnnotationProperties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#C82196F3"
+        android:src="@drawable/ic_annotation_properties"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entityClasses" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/annotation"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/entityAnnotationProperties"
+        app:layout_constraintStart_toStartOf="@id/entityAnnotationProperties"
+        app:layout_constraintTop_toBottomOf="@id/entityAnnotationProperties" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/entityDatatypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#C82196F3"
+        android:src="@drawable/ic_datatypes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@id/entityAnnotationProperties"
+        app:layout_constraintTop_toBottomOf="@id/entityObjectProperties" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/datatypes"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/entityDatatypes"
+        app:layout_constraintStart_toStartOf="@id/entityDatatypes"
+        app:layout_constraintTop_toBottomOf="@id/entityDatatypes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
