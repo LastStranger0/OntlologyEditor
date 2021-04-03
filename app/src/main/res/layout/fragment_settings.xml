@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/loadButtonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:backgroundTint="#C82196F3"
+        android:src="@drawable/ic_load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/load" />
 
-</FrameLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/load"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/loadButtonSettings"
+        app:layout_constraintStart_toStartOf="@id/loadButtonSettings"
+        app:layout_constraintTop_toBottomOf="@id/loadButtonSettings" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButtonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#C82196F3"
+        android:src="@drawable/ic_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/save" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/save"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/saveButtonSettings"
+        app:layout_constraintStart_toStartOf="@id/saveButtonSettings"
+        app:layout_constraintTop_toBottomOf="@id/saveButtonSettings" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

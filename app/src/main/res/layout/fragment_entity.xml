@@ -16,7 +16,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/classes" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView"
@@ -39,13 +40,14 @@
         android:src="@drawable/ic_object_properties"
         app:layout_constraintEnd_toStartOf="@+id/entityDataProperties"
         app:layout_constraintStart_toEndOf="@id/entityClasses"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/objects" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="@string/object"
+        android:text="@string/objects"
         android:layout_marginTop="10dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/entityObjectProperties"
@@ -61,7 +63,8 @@
         android:layout_marginEnd="50dp"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/data" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
@@ -84,7 +87,8 @@
         android:backgroundTint="#C82196F3"
         android:src="@drawable/ic_annotation_properties"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/entityClasses" />
+        app:layout_constraintTop_toBottomOf="@id/entityClasses"
+        android:contentDescription="@string/annotation" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView2"
@@ -109,7 +113,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toEndOf="@id/entityAnnotationProperties"
-        app:layout_constraintTop_toBottomOf="@id/entityObjectProperties" />
+        app:layout_constraintTop_toBottomOf="@id/entityObjectProperties"
+        android:contentDescription="@string/datatypes" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
