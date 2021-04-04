@@ -1,11 +1,10 @@
-package com.mtg.grakoviiredactor
+package com.mtg.grakoviiredactor.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toolbar
 import com.google.android.material.appbar.MaterialToolbar
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.mtg.grakoviiredactor.R
 
 class EntityActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

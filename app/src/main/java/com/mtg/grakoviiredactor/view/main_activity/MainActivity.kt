@@ -1,13 +1,12 @@
-package com.mtg.grakoviiredactor
+package com.mtg.grakoviiredactor.view.main_activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ProgressBar
-import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.textview.MaterialTextView
+import com.mtg.grakoviiredactor.*
 
 class MainActivity : AppCompatActivity() {
 

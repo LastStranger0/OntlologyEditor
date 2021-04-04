@@ -1,4 +1,4 @@
-package com.mtg.grakoviiredactor
+package com.mtg.grakoviiredactor.view.main_activity
 
 import android.content.Context
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.mtg.grakoviiredactor.R
+import com.mtg.grakoviiredactor.view.EntityActivity
 
 class EntityFragment : Fragment() {
 

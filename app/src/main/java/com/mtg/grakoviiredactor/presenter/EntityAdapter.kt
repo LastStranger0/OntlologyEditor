@@ -1,15 +1,17 @@
-package com.mtg.grakoviiredactor
+package com.mtg.grakoviiredactor.presenter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textview.MaterialTextView
+import com.mtg.grakoviiredactor.R
+import com.mtg.grakoviiredactor.model.Classes
 
-class EntityAdapter(var list: MutableList<Entity>):RecyclerView.Adapter<EntityAdapter.EntityHolder>() {
+class EntityAdapter(var list: MutableList<Classes>):RecyclerView.Adapter<EntityAdapter.EntityHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EntityHolder {
-        val layoutInflater = LayoutInflater.from(parent.context).inflate(R.layout.entity, parent, false)
+        val layoutInflater = LayoutInflater.from(parent.context).inflate(R.layout.layout_entity, parent, false)
         return EntityHolder(layoutInflater)
     }
 
