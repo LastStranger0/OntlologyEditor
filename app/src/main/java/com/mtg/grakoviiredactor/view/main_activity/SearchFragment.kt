@@ -12,6 +12,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.mtg.grakoviiredactor.R
 import com.mtg.grakoviiredactor.model.*
 import com.mtg.grakoviiredactor.presenter.IndividualAdapter
+import com.mtg.grakoviiredactor.presenter.WikiLoader
 
 class SearchFragment : Fragment() {
 
@@ -51,6 +52,8 @@ class SearchFragment : Fragment() {
         resultAdapter = IndividualAdapter(resultList)
         searchList.adapter = resultAdapter
 
+        val w = WikiLoader()
+        w.loadFrom("Cat")
         return mView
     }
 

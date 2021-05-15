@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.mtg.grakoviiredactor.R
 import com.mtg.grakoviiredactor.model.Classes
 import com.mtg.grakoviiredactor.model.ObjectProperty
+import com.mtg.grakoviiredactor.presenter.ImageSender
+import com.mtg.grakoviiredactor.presenter.InformationGetter
 
 
 class UploadImageActivity : AppCompatActivity() {
@@ -46,25 +48,7 @@ class UploadImageActivity : AppCompatActivity() {
                 onGalleryConst -> {
                     val uri: Uri? = data?.data
                     image.setImageURI(uri)
-                    if (uri.toString().contains("content://com.google.android.apps.photos.contentprovider/-1/1/content%3A%2F%2Fmedia%2Fexternal%2Fimages%2Fmedia%2F31")){
-                        EntityActivity.image.addClass("Eukaryotes", 0)
-                        EntityActivity.image.addClass("Animals", 1)
-                        EntityActivity.image.addClass("Mammals", 2)
-                        EntityActivity.image.addClass("Canids", 3)
-                        EntityActivity.image.addIndividuals("Dog", Classes("Canids", 3), mutableListOf(), mutableListOf())
-                    }
-                    else if(uri.toString().contains("content://com.google.android.apps.photos.contentprovider/-1/1/content%3A%2F%2Fmedia%2Fexternal%2Fimages%2Fmedia%2F36")){
-                        EntityActivity.image.addClass("Eukaryotes", 0)
-                        EntityActivity.image.addClass("Animals", 1)
-                        EntityActivity.image.addClass("Mammals", 2)
-                        EntityActivity.image.addClass("Felines", 3)
-                    }
-                    else if(uri.toString().contains("content://com.google.android.apps.photos.contentprovider/-1/1/content%3A%2F%2Fmedia%2Fexternal%2Fimages%2Fmedia%2F37")) {
-                        EntityActivity.image.addClass("Eukaryotes", 0)
-                        EntityActivity.image.addClass("Animals", 1)
-                        EntityActivity.image.addClass("Mammals", 2)
-                        EntityActivity.image.addClass("Elephants", 3)
-                    }
+                    InformationGetter().getInformation(uri, image)
                 }
             }
         }
