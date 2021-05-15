@@ -13,12 +13,12 @@ import com.mtg.grakoviiredactor.view.EntityActivity
 
 class EntityFragment : Fragment() {
 
-    lateinit var classButton: FloatingActionButton
-    lateinit var objectPropertiesButton: FloatingActionButton
-    lateinit var dataPropertiesButton: FloatingActionButton
-    lateinit var annotationPropertiesButton: FloatingActionButton
-    lateinit var dataTypesButton: FloatingActionButton
-    lateinit var mContext: Context
+    private lateinit var classButton: FloatingActionButton
+    private lateinit var objectPropertiesButton: FloatingActionButton
+    private lateinit var dataPropertiesButton: FloatingActionButton
+    private lateinit var annotationPropertiesButton: FloatingActionButton
+    private lateinit var dataTypesButton: FloatingActionButton
+    private lateinit var mContext: Context
     override fun onAttach(context: Context) {
         super.onAttach(context)
         mContext = context
@@ -32,12 +32,6 @@ class EntityFragment : Fragment() {
 
     }
 
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

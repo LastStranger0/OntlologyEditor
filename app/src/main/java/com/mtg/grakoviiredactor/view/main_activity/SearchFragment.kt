@@ -15,23 +15,19 @@ import com.mtg.grakoviiredactor.presenter.IndividualAdapter
 
 class SearchFragment : Fragment() {
 
-    lateinit var mContext: Context
-    lateinit var mView: View
+    private lateinit var mContext: Context
+    private lateinit var mView: View
 
-    lateinit var searchText: TextInputEditText
-    lateinit var searchButton: FloatingActionButton
-    lateinit var searchList: RecyclerView
+    private lateinit var searchText: TextInputEditText
+    private lateinit var searchButton: FloatingActionButton
+    private lateinit var searchList: RecyclerView
 
-    lateinit var resultList: MutableList<Individual>
-    lateinit var resultAdapter: IndividualAdapter
+    private lateinit var resultList: MutableList<Individual>
+    private lateinit var resultAdapter: IndividualAdapter
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         mContext = context
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
     }
 
     override fun onCreateView(

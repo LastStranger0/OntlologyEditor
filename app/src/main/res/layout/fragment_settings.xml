@@ -12,11 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:backgroundTint="#C82196F3"
+        android:contentDescription="@string/load"
         android:src="@drawable/ic_load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/load" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
@@ -35,11 +36,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="80dp"
         android:backgroundTint="#C82196F3"
+        android:contentDescription="@string/save"
         android:src="@drawable/ic_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/save" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
@@ -52,5 +54,27 @@
         app:layout_constraintStart_toStartOf="@id/saveButtonSettings"
         app:layout_constraintTop_toBottomOf="@id/saveButtonSettings" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/loadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C82196F3"
+        android:contentDescription="@string/save"
+        android:src="@drawable/ic_cloud_upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadButtonSettings" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/load_image"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/loadImageButton"
+        app:layout_constraintStart_toStartOf="@id/loadImageButton"
+        app:layout_constraintTop_toBottomOf="@id/loadImageButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
