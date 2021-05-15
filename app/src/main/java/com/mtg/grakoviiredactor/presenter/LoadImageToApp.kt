@@ -9,20 +9,52 @@ class LoadImageToApp {
     private val objectProperties = mutableListOf<ObjectProperty>()
 
     fun addClass(name: String, lvl: Int){
-        classes.add(Classes(name, lvl))
+        var canAdd = true
+        for(i in classes){
+            if (i.name == name){
+                canAdd = false
+            }
+        }
+        if(canAdd){
+            classes.add(Classes(name, lvl))
+        }
     }
 
     fun addData(name: String, result: String){
-        dataProperties.add(DataProperty(Data(name), result))
+        var canAdd = true
+        for (i in dataProperties){
+            if (i.data.name == name){
+                canAdd = false
+            }
+        }
+        if (canAdd){
+            dataProperties.add(DataProperty(Data(name), result))
+        }
     }
 
     fun addIndividuals(name: String, classes: Classes, dataProperties: MutableList<DataProperty>,
                        objectProperties: MutableList<ObjectProperty>){
-        individuals.add(Individual(name, classes, dataProperties, objectProperties))
+        var canAdd = true
+        for (i in individuals){
+            if (i.name == name){
+                canAdd = false
+            }
+        }
+        if (canAdd){
+            individuals.add(Individual(name, classes, dataProperties, objectProperties))
+        }
     }
 
     fun addObject(name: String, result: String){
-        objectProperties.add(ObjectProperty(Objects(name), result))
+        var canAdd = true
+        for (i in objectProperties){
+            if (i.objects.name == name){
+                canAdd = false
+            }
+        }
+        if (canAdd){
+            objectProperties.add(ObjectProperty(Objects(name), result))
+        }
     }
 
     fun getClasses(): MutableList<Classes>{
