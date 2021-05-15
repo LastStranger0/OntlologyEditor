@@ -29,8 +29,14 @@ class IndividualAdapter(var individuals: MutableList<Individual>): RecyclerView.
         if (individuals[position].dataProperties.size > 0){
             holder.dataProperty.visibility = View.VISIBLE
         }
+        else{
+            holder.dataProperty.visibility = View.INVISIBLE
+        }
         if (individuals[position].objectProperties.size > 0){
             holder.objectProperty.visibility = View.VISIBLE
+        }
+        else{
+            holder.objectProperty.visibility = View.INVISIBLE
         }
     }
 

@@ -34,15 +34,13 @@ class LoadImageToApp {
 
     fun addIndividuals(name: String, classes: Classes, dataProperties: MutableList<DataProperty>,
                        objectProperties: MutableList<ObjectProperty>){
-        var canAdd = true
+        var canAdd = 0
         for (i in individuals){
             if (i.name == name){
-                canAdd = false
+                canAdd++
             }
         }
-        if (canAdd){
-            individuals.add(Individual(name, classes, dataProperties, objectProperties))
-        }
+        individuals.add(Individual((name+(canAdd+1).toString()), classes, dataProperties, objectProperties))
     }
 
     fun addObject(name: String, result: String){
@@ -59,5 +57,9 @@ class LoadImageToApp {
 
     fun getClasses(): MutableList<Classes>{
         return classes
+    }
+
+    fun getIndividuals(): MutableList<Individual>{
+        return individuals
     }
 }

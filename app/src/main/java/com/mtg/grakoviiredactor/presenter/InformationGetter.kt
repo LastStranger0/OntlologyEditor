@@ -21,6 +21,7 @@ class InformationGetter {
                 EntityActivity.image.addClass("Animals", 1)
                 EntityActivity.image.addClass("Mammals", 2)
                 EntityActivity.image.addClass("Felines", 3)
+                EntityActivity.image.addIndividuals("Cat", Classes("Felines", 3), mutableListOf(), mutableListOf())
             }
             else if(uri.toString().contains("content://com.google.android.apps.photos.contentprovider/-1/1/content%3A%2F%2Fmedia%2Fexternal%2Fimages%2Fmedia%2F37")) {
                 ImageSender().uploadImage("Elephant", image)
@@ -28,6 +29,7 @@ class InformationGetter {
                 EntityActivity.image.addClass("Animals", 1)
                 EntityActivity.image.addClass("Mammals", 2)
                 EntityActivity.image.addClass("Elephants", 3)
+                EntityActivity.image.addIndividuals("Elephant", Classes("Elephant", 3), mutableListOf(), mutableListOf())
             }
     }
 }
